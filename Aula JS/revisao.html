@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="Lewis" style="width: 150px; height: 150px; background-color: rgb(66, 87, 66);"></div>
+    
+    <script>
+
+        var mudar = false;
+
+        function leite() {
+            var pao = document.getElementById('Lewis');
+
+            for( var t = 0; t < 3; t++){
+                for( var k = 1; k < 4; k++){
+                    var id = k + (t * 3);
+                    pao.innerHTML += `<button id=${id} style='width: 50px; height: 50px;' onclick='bolo(${id})'>-</button>`
+                }
+            }
+        }
+
+
+        function bolo(id){
+
+            var cores = "red";
+            var texto =   "X";
+
+            if (mudar == true) {
+                mudar = false;
+                texto = "O";
+              cores = "blue";
+            } else {
+                mudar = true;
+                cores ='red';
+            }
+
+            var pais = document.getElementById(id);
+            pais.innerHTML = texto;
+            pais.disabled = true;
+            pais.style.backgroundColor = cores;
+            pais.style.color = 'white';
+
+        
+        }
+
+        leite();
+
+    </script>
+    
+</body>
+</html>
+
+
+<!-- `<button id=${k} style='width: 50px; height: 50px;'>COR</button>`-->
+<!-- <button id="+ k +" style='width: 50px; height: 50px;'>COR</button> -->

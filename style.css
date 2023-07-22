@@ -1,0 +1,251 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: verdana, Geneva, tahoma, sans-serif;
+
+}
+
+body {
+    background-image: url(img.jpg.jpg);
+    display: flex;
+    justify-content: center;
+    background-position: 10px 10px;
+    animation: transition 60s linear infinite;
+}
+
+@keyframes transition {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    50% {
+        background-position: 1500px 0px;
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+  }
+
+.paginaprincipal{
+    display: flex;
+    padding: 10px;
+    margin-top: 100px;
+   
+}
+
+#flash-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+    font-size: 13px;
+    background-color: rgb(223, 248, 248);
+    padding: 10px;
+    margin: 5px;
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    color: rgb(138, 136, 136);
+    animation: flash 0.5s linear ;
+}
+
+@keyframes flash {
+    0% {
+        top: 0px; 
+        opacity: 0%;
+    }
+    100% {
+        top: -35px;
+        opacity: 100%;
+    }
+}
+
+h3 {
+    display: flex;
+    justify-content: left;
+    font-size: 10px;
+    padding: 10px;
+}
+
+
+.texto1{
+    color: white;
+    margin: 10px;
+    flex: 1;
+}
+.texto2{
+    color: white;
+    margin: 10px;
+}
+
+.texto3 {
+   display: flex;
+   justify-content: center;
+   width: 280px;
+   color: rgb(138, 136, 136);
+    
+    
+}
+
+.form {
+    padding: 20px;
+    height: 100px;
+    width: 350px;
+    
+   
+}
+
+.form-style {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+    
+    margin-block-end: auto;
+    
+  
+}
+
+h4 {
+    font-size: 13px;
+    width: 500px;
+}
+
+input {
+    font-size: 150px;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;
+    margin: 10px;
+    width: 270px;
+    font-size: 10px;
+}
+
+.saiu {
+    position: absolute;
+}
+
+input[type=text] {
+    color: rgb(209, 207, 207);
+}
+
+input[type=email] {
+    color: rgb(209, 207, 207);
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    padding: 5px;
+    margin: 10px;
+
+}    
+
+.face {
+    background-color: #7da0eb;
+    color: white;
+    border: 0px;
+}
+
+.conta {
+    background-color: white;
+    border: 1px solid rgb(223, 223, 223);
+
+}
+
+input[type=submit]{
+    background-color: #3b5998;
+    color: white;
+    border: 0px
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    width: 280px;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+.flash {
+    background-color: #ffc107;
+    color: #333333;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+  .poder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: #00000056;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+  }
+
+  .filha{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius:  blue 10px;
+    border: #3b5998 solid 1px;
+  }
+
+  .fechar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+  }
+
+  .form-enviar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #sucesso{
+    position: absolute;
+    top: 25px;
+    
+  }
+
+  .noIntrution{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: #00000056;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+ }
+
+ 

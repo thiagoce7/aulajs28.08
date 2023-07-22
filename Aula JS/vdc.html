@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ternura" style="width: 150px; height: 150px; background-color: red;">
+
+    </div>
+
+    <script>
+
+        function mah(id){
+            var sono = document.getElementById('ternura');
+            alert('começar o jogo');
+
+            var botao = document.getElementById(id);
+            botao.innerHTML = "x";
+        }
+
+        function textoto(){
+
+            var tert = document.getElementById('ternura')
+
+            for( var t = 0; t < 3; t++){
+
+                for( var k = 0; k < 3; k++){
+                    tert.innerHTML += "<button id='0' style = 'width: 50px; height: 50px' onclick = 'mah(0)'></button>";
+                }
+                tert.innerHTML += '<br>'
+
+            }
+
+            
+
+        
+
+        }
+
+        
+        textoto();
+
+
+    </script>
+
+
+</body>
+</html>

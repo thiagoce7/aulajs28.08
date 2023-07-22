@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+<script>
+
+var A = ['a','n','r','r','e'];
+
+var B = ['t','a','a','g','o'];
+
+for( var j = 0; j < A.length; j++){
+  document.write(A[j]);
+}
+
+document.write("<br><br>");
+
+for( var x in B ){
+  if (B[x] == "a")
+    document.write(A[x]);
+}
+
+document.write("<br><br>");
+
+for( var x of A ){
+  if (x == "r")
+    document.write(x);
+}
+
+</script>

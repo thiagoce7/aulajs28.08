@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Thiago Ferreira</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    
+    
+</head>
+<body>
+    <div class="paginaprincipal">
+        <div>
+            <p>Bem-vindo ao Site</p><br>
+            <h4 class="texto1">Texto de teste para ser usado apenas como refêrencia</h4><br>
+            <h4 class="texto2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h4>
+        </div>
+    
+        <div class="form">
+            <div class="saiu">
+                <div id="flash-message" style="display:none"></div>
+            </div>
+            <div class="form-style">
+                                
+                <form action="paginas/login.html" method="get">
+                    <input type="text" placeholder="login" id="login"><br>
+                    <input type="password" placeholder="senha" id="senha"><br>
+                    <input type="submit" name="login" id="login" value="Entrar" onclick="logar(); return false">                    
+                </form>
+
+                <h4 class="texto3">ou</h4>
+                <button class="face" onclick="window.open('https://www.facebook.com/', '_blank')">Login com Facebook</button>
+                <button class="conta"onclick="showFlashMessage('Conta Bloqueada', '#ff6363', '15px', '#000');">Criar conta</button>  
+                <a href="" onclick="smoke('flex'); return false">Esqueceu a Senha?</a><br>
+                <a href="" onclick="intrution()" >Não recebeu instruções de confirmação?</a>
+
+            </div>
+
+            <div id="power" class="poder" style="display: none;">
+                <button class="fechar" onclick="smoke('none')">X</button>
+                <div class="filha">
+                    <div id="sucesso" style="display: none;"></div>
+                    <form class="form-enviar">
+                        <input type="email" placeholder="email" id="email" value="email">
+                        <input type="submit" name="Enviar" onclick="senhaEsc('Email Enviado com Sucesso'); return false">
+                    </form>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+    <script src='inicio.js'></script>
+</body>
+
+    
+
+</html>

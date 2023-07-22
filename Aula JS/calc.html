@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="mudar" style="width:150px; height: 150px;background-color: rgb(19, 2, 2); color: aliceblue;">
+    </div>
+
+    <button id="botao" style="width: 150px;" onclick="executarQuandoChamarOEvento()">Mudar Cor</button>
+
+    <script>
+        
+        var botao = document.getElementById("botao");
+        var minhaDiv = document.getElementById("mudar");
+
+        //botao.addEventListener("click", acrescentarTexto);
+      
+        function executarQuandoChamarOEvento(){
+            
+            var cor_que_retornou = gerarCorAleatoria();
+            minhaDiv.style.backgroundColor = cor_que_retornou;
+        }
+
+        function gerarCorAleatoria() {
+
+            var letras = "0123456789ABCDEF";
+            var cor = "#";
+
+            for (var i = 0; i < 6; i++) {
+                cor += letras[Math.floor(Math.random() * 16)];
+            }
+
+            return cor;
+        }
+
+
+    </script>
+
+</body>
+</html>
+
+<!-- 
+
+
+    for( var i = 0; i < 3 ; i++ ) {
+
+        for( var i = 0; i < 3 ; i++ ) {
+            
+        }
+
+    }
+
+
+
+
+
+    forLoop
+
+        9 botões e quando clicar mudar a cor dele
+
+
+    x x x
+    x x x
+    x x x
+
+    forLoop
+        innerHTML
+            button
+                evento do click pra mudar a cor
+
+ -->
+
+ 
+ <!-- function dez(){
+     var onze = document.getElementById('mudar');
+     onze.style.backgroundColor = 'blue'
+ }
+ function mengo(mensagen) {
+     var azus = document.getElementById('mudar');
+
+     for(var i = 0; i < 3; i++){
+
+         for(var j = 0; j < 4; j++){
+             azus.innerHTML += mensagen;
+         }
+         azus.innerHTML += '<br>';
+     }
+ }
+  
+ mengo("<button onclick = 'dez()'>Cor</button>");-->
+ 
