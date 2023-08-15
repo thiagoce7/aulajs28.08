@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="password" name="password" id="password">
+    <button type="button" onclick="Chave()">mudar</button>
+
+
+    <script>
+
+        function Chave(){
+            let tres = document.querySelector("#password");
+
+
+            const tipo = tres.getAttribute('type') == 'password' ? 'text' : 'password';
+            tres.setAttribute('type', tipo);
+
+
+                /*
+
+                    ? :
+
+                    condicao ? true : false
+                    
+                    if (){
+                    } else {
+                    }
+
+                    setAttribute => setar um atributo da tag
+                    var.setAttribute("nome do atributo","valor do atributo");
+
+                */
+
+        }
+        
+        
+
+
+    </script>
+
+
+    
+</body>
+</html>

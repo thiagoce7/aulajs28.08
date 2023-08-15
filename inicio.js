@@ -50,3 +50,9 @@ function senhaEsc(mensage){
   const email = document.getElementById('email').value;    
   showFlashMessage(mensage, '#fff', '12px', '#3085d6', 'sucesso');
 }
+
+function changepassword(){
+    var sono = document.querySelector('#senha');
+      const nois = sono.getAttribute('type') == 'text' ? 'password' : 'text';
+        sono.setAttribute('type', nois);
+}

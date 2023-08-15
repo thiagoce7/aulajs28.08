@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<img id="animal" src="cat.jpeg" alt="cat" data-type="cat">
+<br>
+<button onclick="ChangeImage('./dog.jpg', 'dog animal')">change image to dog</button>
+<button onclick="ChangeImage('./cat.jpeg', 'cat animal')">change image to cat</button>
+<button onclick="ChangeImage('./Papagaio.jpg', 'parrot animal')">change image to parrot</button>
+<button onclick="GetTypeAnimal()">O animal é um ...?</button>
+
+<body>
+    <script>
+
+        function ChangeImage(anil, type) {
+
+            /* set attribute src and data-type */
+            /** anil is path image and type is a type of animal **/
+
+            let animais = document.querySelector('#animal');
+            animais.setAttribute('src', anil);
+            animais.setAttribute('data-type', type);
+
+            /*
+        
+            setAttribute
+                nome do atributo
+                valor que quer atribuir no atributo
+
+            */
+
+        }
+
+        function GetTypeAnimal() {
+            
+            /* get attribute data-type */
+
+            let mmm = document.querySelector('#animal');
+            alert(mmm.getAttribute('data-type'));
+            
+        }
+
+
+
+
+
+
+
+        /*
+
+        set = setar um valor;
+        get = pegar um valor;
+
+        setAttribute("nome do atributo","novo valor do atributo");
+        getAttribute("nome do atributo");
+        
+        */
+
+
+    </script>
+</body>
+</html>
