@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scroll.css">
+</head>
+<body>
+
+    <div style="width: 100px; height: 1000px; background-color: red;"></div>
+
+    <button class="scroto" onclick="scrollPara()">X</button>
+
+
+    <script>
+
+        
+        window.addEventListener('scroll', scrolar );
+
+        function scrolar(){
+               
+            if (window.scrollY == 0){
+                document.querySelector('.scroto').style.display = "none";
+            } else {
+                document.querySelector('.scroto').style.display = "flex";
+            }
+
+            
+        }
+
+        function scrollPara(){
+
+            // scrolar para
+            // x e y => começa esquerda cima
+            window.scrollTo(0,0);
+            
+
+            /*
+
+            criar dois menus, um no topo e o outro aparece quando faz scroll
+
+
+            */
+
+            /*
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            })
+            */
+
+            /*
+            console.log(window.scrollY);
+            console.log(window.scrollX);
+            window.scrollTo(0,0);
+            */
+
+        }
+
+        /* window */
+
+        /** window.scrollTo = scroll para **/
+        /*** window.scrollY window.scrollX ***/
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>
